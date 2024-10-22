@@ -1,0 +1,22 @@
+-
+  login:
+    path: /v1/account/login
+    data:
+      username: 'admin'
+      password: '123456'
+
+
+  languages:
+    path: /v1/languages
+    headers:
+      access-token:
+
+  setall:
+    path: /v1/languages/setall
+    headers:
+      access-token:
+    data:
+      languages:
+        lang_name: 'en-US'
+        lang_code: 'en'
+        is_default: True
